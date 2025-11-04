@@ -1,4 +1,5 @@
 # Bonsai
 .bonsai/Packages
 .bonsai/Settings
-Bonsai.exe
+.bonsai/Bonsai.exe
+.bonsai/Bonsai.exe.settings
