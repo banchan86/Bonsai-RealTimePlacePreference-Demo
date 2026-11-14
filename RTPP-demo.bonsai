@@ -20,6 +20,15 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="vid:VideoCaptureDevice">
           <vid:Index>0</vid:Index>
+          <vid:Format>
+            <vid:FrameSize>
+              <vid:Width>1280</vid:Width>
+              <vid:Height>720</vid:Height>
+            </vid:FrameSize>
+            <vid:AverageFrameRate>30</vid:AverageFrameRate>
+            <vid:MaximumFrameRate>30</vid:MaximumFrameRate>
+            <vid:BitCount>24</vid:BitCount>
+          </vid:Format>
           <vid:CaptureProperties />
         </Combinator>
       </Expression>
@@ -55,7 +64,7 @@
           <harp:VisualIndicators>On</harp:VisualIndicators>
           <harp:Heartbeat>Disabled</harp:Heartbeat>
           <harp:IgnoreErrors>false</harp:IgnoreErrors>
-          <harp:PortName>COM7</harp:PortName>
+          <harp:PortName>COM6</harp:PortName>
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -76,38 +85,38 @@
           <cv:Regions>
             <cv:ArrayOfPoint>
               <cv:Point>
-                <cv:X>53</cv:X>
-                <cv:Y>24</cv:Y>
+                <cv:X>107</cv:X>
+                <cv:Y>97</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>337</cv:X>
-                <cv:Y>24</cv:Y>
+                <cv:X>590</cv:X>
+                <cv:Y>97</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>337</cv:X>
-                <cv:Y>432</cv:Y>
+                <cv:X>590</cv:X>
+                <cv:Y>617</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>53</cv:X>
-                <cv:Y>432</cv:Y>
+                <cv:X>107</cv:X>
+                <cv:Y>617</cv:Y>
               </cv:Point>
             </cv:ArrayOfPoint>
             <cv:ArrayOfPoint>
               <cv:Point>
-                <cv:X>345</cv:X>
-                <cv:Y>25</cv:Y>
+                <cv:X>662</cv:X>
+                <cv:Y>104</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>602</cv:X>
-                <cv:Y>25</cv:Y>
+                <cv:X>1163</cv:X>
+                <cv:Y>104</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>602</cv:X>
-                <cv:Y>427</cv:Y>
+                <cv:X>1163</cv:X>
+                <cv:Y>597</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>345</cv:X>
-                <cv:Y>427</cv:Y>
+                <cv:X>662</cv:X>
+                <cv:Y>597</cv:Y>
               </cv:Point>
             </cv:ArrayOfPoint>
           </cv:Regions>
@@ -132,14 +141,14 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:HsvThreshold">
           <cv:Lower>
-            <cv:Val0>15</cv:Val0>
-            <cv:Val1>28</cv:Val1>
-            <cv:Val2>206</cv:Val2>
+            <cv:Val0>21</cv:Val0>
+            <cv:Val1>110</cv:Val1>
+            <cv:Val2>173</cv:Val2>
             <cv:Val3>0</cv:Val3>
           </cv:Lower>
           <cv:Upper>
-            <cv:Val0>28</cv:Val0>
-            <cv:Val1>114</cv:Val1>
+            <cv:Val0>56</cv:Val0>
+            <cv:Val1>237</cv:Val1>
             <cv:Val2>255</cv:Val2>
             <cv:Val3>0</cv:Val3>
           </cv:Upper>
@@ -180,38 +189,38 @@
           <cv:Regions>
             <cv:ArrayOfPoint>
               <cv:Point>
-                <cv:X>53</cv:X>
-                <cv:Y>24</cv:Y>
+                <cv:X>107</cv:X>
+                <cv:Y>97</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>337</cv:X>
-                <cv:Y>24</cv:Y>
+                <cv:X>590</cv:X>
+                <cv:Y>97</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>337</cv:X>
-                <cv:Y>432</cv:Y>
+                <cv:X>590</cv:X>
+                <cv:Y>617</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>53</cv:X>
-                <cv:Y>432</cv:Y>
+                <cv:X>107</cv:X>
+                <cv:Y>617</cv:Y>
               </cv:Point>
             </cv:ArrayOfPoint>
             <cv:ArrayOfPoint>
               <cv:Point>
-                <cv:X>345</cv:X>
-                <cv:Y>25</cv:Y>
+                <cv:X>662</cv:X>
+                <cv:Y>104</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>602</cv:X>
-                <cv:Y>25</cv:Y>
+                <cv:X>1163</cv:X>
+                <cv:Y>104</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>602</cv:X>
-                <cv:Y>427</cv:Y>
+                <cv:X>1163</cv:X>
+                <cv:Y>597</cv:Y>
               </cv:Point>
               <cv:Point>
-                <cv:X>345</cv:X>
-                <cv:Y>427</cv:Y>
+                <cv:X>662</cv:X>
+                <cv:Y>597</cv:Y>
               </cv:Point>
             </cv:ArrayOfPoint>
           </cv:Regions>
@@ -224,7 +233,7 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:RoiActivityDetected">
           <cv:Index>0</cv:Index>
-          <cv:Threshold>200000</cv:Threshold>
+          <cv:Threshold>50000</cv:Threshold>
         </Combinator>
       </Expression>
       <Expression xsi:type="rx:Condition">
@@ -256,7 +265,7 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:RoiActivityDetected">
           <cv:Index>1</cv:Index>
-          <cv:Threshold>200000</cv:Threshold>
+          <cv:Threshold>50000</cv:Threshold>
         </Combinator>
       </Expression>
       <Expression xsi:type="rx:PublishSubject">
@@ -572,7 +581,7 @@
               <gui:Enabled>false</gui:Enabled>
               <gui:Visible>true</gui:Visible>
               <gui:Font>Arial, 10.125pt</gui:Font>
-              <gui:Text>Optogenetic Stimulation Enabled</gui:Text>
+              <gui:Text>Optogenetic Stimulation Disabled</gui:Text>
               <gui:Multiline>true</gui:Multiline>
             </Expression>
             <Expression xsi:type="VisualizerMapping" />
@@ -877,12 +886,12 @@
       <Expression xsi:type="ui:VisualizerWindow">
         <ui:Visible>true</ui:Visible>
         <ui:Location>
-          <ui:X>200</ui:X>
-          <ui:Y>200</ui:Y>
+          <ui:X>100</ui:X>
+          <ui:Y>100</ui:Y>
         </ui:Location>
         <ui:Size>
-          <ui:Width>1400</ui:Width>
-          <ui:Height>800</ui:Height>
+          <ui:Width>1200</ui:Width>
+          <ui:Height>720</ui:Height>
         </ui:Size>
         <ui:WindowState xsi:nil="true" />
       </Expression>
